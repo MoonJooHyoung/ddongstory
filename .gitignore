@@ -1,0 +1,52 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build
+build/
+dist/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs
+*.log
+logs/
+
+# Dependencies
+node_modules/
+venv/
+env/
+__pycache__/
+
+# Game Engine specific
+*.meta
+Library/
+Temp/
+obj/
+*.csproj
+*.sln
+
+# Godot specific
+.godot/
+.import/
+export_presets.cfg
+export/
+*.tmp
+*.bak
+*.swp
+*.orig
+
+# Assets (if too large)
+# Uncomment if needed
+# assets/sprites/
+# assets/sounds/
+

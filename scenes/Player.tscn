@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7k9m2n4p5q6r"]
+
+[ext_resource type="Script" path="res://scripts/player/Player.gd" id="1_1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(32, 48)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.5, 0.5, 1)
+scale = Vector2(32, 48)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = -1000
+limit_top = -1000
+limit_right = 1000
+limit_bottom = 1000
+
